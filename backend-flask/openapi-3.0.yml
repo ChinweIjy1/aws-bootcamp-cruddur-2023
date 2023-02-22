@@ -151,7 +151,7 @@ paths:
   api/activities/notifications:
     get:
       description: 'Return a fed of activity based on activity of all of those I follow'
-      * tags!
+      * tags:
        * activities
 
       parameters: []
