@@ -13,7 +13,7 @@ paths:
         - activities
       responses:
         '200':
-          description: Returns an array of activities"
+          description: Returns an array of activities
           content:
             application/json:
               schema:
@@ -150,25 +150,24 @@ paths:
                   $ref: '#/components/schemas/Message'
   api/activities/notifications:
     get:
-      description: 'Return a fed of activity based on activity of all of those I follow'
-      * tags:
-       * activities
-
+      description: 'Return a feed of activity for all those that I follow
+      tags
+       - activities
       parameters: []
       responses:
         '200':
           description: Returns an array of activities
-
-components:
+content:
+  application/json:
   schemas:
-    Activity:
-      type: object
-      properties:
-        uuid:
-          type: string
-          example: 0056a369-4618-43a4-ad88-e7c371bf5582
-        display_name:
-          type: string
+      type: array
+      items:
+      $ref: '#/components/schemas/Activity'
+        components:
+          schema:
+          activity
+        type: object
+          properties:
           example: "Andrew Brown"
         handle:
           type: string
