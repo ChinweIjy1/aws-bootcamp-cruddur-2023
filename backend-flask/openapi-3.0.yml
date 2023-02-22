@@ -163,11 +163,11 @@ content:
       type: array
       items:
       $ref: '#/components/schemas/Activity'
-        components:
-          schema:
-          activity
-        type: object
-          properties:
+components:
+  schema:
+    Activity
+      type: object
+      properties:
           example: "Andrew Brown"
         handle:
           type: string
