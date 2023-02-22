@@ -157,7 +157,7 @@ paths:
       parameters: []
       responses:
         '200':
-          description: OK
+          description: Returns an array of activities
 
 components:
   schemas:
