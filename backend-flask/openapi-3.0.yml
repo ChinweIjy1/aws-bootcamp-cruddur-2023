@@ -150,44 +150,44 @@ paths:
                   $ref: '#/components/schemas/Message'
   api/activities/notifications:
     get:
-      description: 'Return a feed of activity for all those that I follow
-      tags
+      description: 'Return a feed of activity for all those that I follow'
+      tags:
        - activities
       parameters: []
       responses:
         '200':
           description: Returns an array of activities
-content:
-  application/json:
-  schemas:
-      type: array
-      items:
-      $ref: '#/components/schemas/Activity'
+          content:
+           application/json:
+             schemas:
+              type: array
+             items:
+               $ref: '#/components/schemas/Activity'
 components:
-  schema:
-    Activity
+  schemas:
+    Activity:
       type: object
       properties:
           example: "Andrew Brown"
         handle:
           type: string
           example: "andrewbrown"
-        message:
+          message:
           type: string
-          example: "Who likes pineapple on their pizza?"
-        replies_count:
+      example: "Who likes pineapple on their pizza?"
+      replies_count:
           type: integer
           example: 5
-        reposts_count:
+      reposts_count:
           type: integer
           example: 2
-        likes_count:
+      likes_count:
           type: integer
           example: 103
-        created_at:
+      created_at:
           type: string
           example: "2023-02-06T18:11:03+00:00"
-        expires_at:
+      expires_at:
           type: string
           example: "2023-02-06T18:11:03+00:00"
     Reply:
