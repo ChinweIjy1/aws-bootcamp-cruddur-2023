@@ -1,25 +1,25 @@
 FROM python:3.10-slim-buster
 
-#Inside Container
-# make a new folder inside container
+# Inside Container
+# make a new folder inside the container
 WORKDIR /backend-flask
 
-# outside Container -> Inside Container
-# this contains the libraries want to instal to run the app
+# Outside Container ->
+# this contains the libraries we want to install to run the app
 COPY requirements.txt requirements.txt
 
 # Inside Container
 # Install the python libraries used for the app
 RUN pip3 install -r requirements.txt
 
-#Outside Container -> Inside Container
+#Outside Container ->
 # . means everything in the current directory
-# first period . - /backend-flask (outside the container)
+# first period . /backend-flask (inside container)
 # second period . /backend-flask (inside container)
 COPY . .
 
-# Set environmentsl variables (Env Vars)
-#Inside container and will remain set when the container is running
+# Set Environment Variables (Env Vars)
+# Insider Container and will remain set when the container is running
 ENV FLASK_ENV=development
 
 EXPOSE ${PORT}
