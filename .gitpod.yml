@@ -18,3 +18,9 @@ vscode:
   extensions:
     - 42Crunch.vscode-openapi
     - cweijan.vscode-postgresql-client2
+    - ms-azuretools.vscode-docker
+    - dbaeumer.vscode-eslint
+    - davidanson.vscode-markdownlint
+    - ms-python.python
+    - esbenp.prettier-vscode
+    - cmstead.js-snapshot-tools
