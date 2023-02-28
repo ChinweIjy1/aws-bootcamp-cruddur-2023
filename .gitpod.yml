@@ -8,6 +8,13 @@ tasks:
       unzip awscliv2.zip
       sudo ./aws/install
       cd $THEIA_WORKSPACE_ROOT
+  - name: Initialize Frontend and Backend
+    init: |
+      cd /workspace/aws-bootcamp-cruddur-2023/backend-flask
+      pip install --upgrade pip
+      pip3 install -r requirements.txt
+      cd /workspace/aws-bootcamp-cruddur-2023/frontend-react-js
+      npm install    
   - name: postgres
     init: |
       curl -fsSL https://www.postgresql.org/media/keys/ACCC4CF8.asc|sudo gpg --dearmor -o /etc/apt/trusted.gpg.d/postgresql.gpg
@@ -16,11 +23,5 @@ tasks:
       sudo apt install -y postgresql-client-13 libpq-dev
 vscode:
   extensions:
-    - 42Crunch.vscode-openapi
+    - 42Crunch.vscode-openapi      
     - cweijan.vscode-postgresql-client2
-    - ms-azuretools.vscode-docker
-    - dbaeumer.vscode-eslint
-    - davidanson.vscode-markdownlint
-    - ms-python.python
-    - esbenp.prettier-vscode
-    - cmstead.js-snapshot-tools
