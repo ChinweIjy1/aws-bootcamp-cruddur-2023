@@ -148,3 +148,10 @@ volumes:
 
 I had to remove all indentation which disturbed me alot before all containers got connected
 ![Screenshot of all containers working when I docker compose up](https://github.com/ChinweIjy1/aws-bootcamp-cruddur-2023/blob/main/journal/assets/FBPD%20connected.PNG)
+
+I was able to set up Postgres and DynamoDB
+
+![Screenshot of Postgres setup inside the Database Explorer](https://github.com/ChinweIjy1/aws-bootcamp-cruddur-2023/blob/main/journal/assets/add%20database%20explorer.PNG)
+
+# 10 BEST SECURITY PRACTICES FOR CONTAINERS
+I read about the 10 best Security Practice for Containers which are as follows:
