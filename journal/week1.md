@@ -153,5 +153,9 @@ I was able to set up Postgres and DynamoDB
 
 ![Screenshot of Postgres setup inside the Database Explorer](https://github.com/ChinweIjy1/aws-bootcamp-cruddur-2023/blob/main/journal/assets/add%20database%20explorer.PNG)
 
-# 10 BEST SECURITY PRACTICES FOR CONTAINERS
+# 10 BEST SECURITY PRACTICES FOR DOCKER CONTAINERS
 I read about the 10 best Security Practice for Containers which are as follows:
+1. One should keep their Host and Docker updated to the latest security practices
+2. Docker Daemon and Containers should be run in the non-root user mode which means it should be run by a User and not with the Root account so that the root user would not be compromised.
+3. There should be image vunerability scanning which means the container should have applications and images that is required.
+4.  
