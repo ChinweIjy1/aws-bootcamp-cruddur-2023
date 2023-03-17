@@ -44,7 +44,7 @@ docker build -t  backend-flask ./backend-flask
 ```
 docker run --rm -p 4567:4567 -it -e FRONTEND_URL='*' -e BACKEND_URL='*' backend-flask
 ```
-## To containerize the Frontend, I cd into the frontend directory and inputed this command to install the node modules for the frontend application
+#### To containerize the Frontend, I cd into the frontend directory and inputed this command to install the node modules for the frontend application
 ```
 npm install
 ```
@@ -157,5 +157,15 @@ I was able to set up Postgres and DynamoDB
 I read about the 10 best Security Practice for Containers which are as follows:
 1. One should keep their Host and Docker updated to the latest security practices
 2. Docker Daemon and Containers should be run in the non-root user mode which means it should be run by a User and not with the Root account so that the root user would not be compromised.
-3. There should be image vunerability scanning which means the container should have applications and images that is required.
-4.  
+3. There should be image vunerability scanning which means the container should have applications and images that is required so that there will be minimal consumption of data/size.
+4.  Trusting a private vs. public image registry. Despite any one used, one needs to be sure of the registry.
+5.  No sensitive Data in Docker files or images. There should be no secrets or informations that needs to be confidential inside the Docker images or files as the case may be
+6.  One has to use secret management services to share secrets.
+7.  One should also apply the Read only files system and volume for Docker 
+8.  Seperate databases for long term storage so that they can be clearly defined.
+9.  Use DevSecOps practices while building application security
+10.  Ensure that all codes are tested for vunerabilities before production use.
+
+# HOW TO ENSURE THAT DOCKER COMPOSE IS SECURED
+SNYK open source security is great to use.
+I was able to scan two of my repositories of which one failed to import while the second one which is this Repository imported.
