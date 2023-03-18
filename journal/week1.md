@@ -167,10 +167,17 @@ I read about the 10 best Security Practice for Containers which are as follows:
 10.  Ensure that all codes are tested for vunerabilities before production use.
 
 # HOW TO ENSURE THAT DOCKER COMPOSE IS SECURED
+
 SNYK open source security is great to use and ensures that Docker Compose is secured.
+
 ![My Snyk Screenshot](https://github.com/ChinweIjy1/aws-bootcamp-cruddur-2023/blob/main/journal/assets/snyk.PNG)
+
 I was able to scan two of my repositories of which one failed to import while the second one which is this Repository imported.
+
 #### Failed to import
+
 ![The failed snyk imported Repository](https://github.com/ChinweIjy1/aws-bootcamp-cruddur-2023/blob/main/journal/assets/failed%20to%20import.PNG)
+
 #### The imported and Scanned Repository
+
 ![Screenshot of s Scanned repository](https://github.com/ChinweIjy1/aws-bootcamp-cruddur-2023/blob/main/journal/assets/scanned%20aws%20bootcamp%20repo.PNG)
