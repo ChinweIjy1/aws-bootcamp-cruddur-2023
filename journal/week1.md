@@ -168,7 +168,7 @@ I read about the 10 best Security Practice for Containers which are as follows:
 
 # HOW TO ENSURE THAT DOCKER COMPOSE IS SECURED
 
-SNYK open source security is great to use and ensures that Docker Compose is secured.
+SNYK open source security helps developers find and fix vulnerabilities in their containers and it is great to use and ensures that Docker Compose is secured.
 
 ![My Snyk Screenshot](https://github.com/ChinweIjy1/aws-bootcamp-cruddur-2023/blob/main/journal/assets/snyk.PNG)
 
@@ -181,3 +181,9 @@ I was able to scan two of my repositories of which one failed to import while th
 #### The imported and Scanned Repository
 
 ![Screenshot of s Scanned repository](https://github.com/ChinweIjy1/aws-bootcamp-cruddur-2023/blob/main/journal/assets/scanned%20aws%20bootcamp%20repo.PNG)
+
+# SECRET MANAGEMENT
+
+They are resources used to store scerets and help not store secrets in a docker compose file.
+AWS SECRET MANAGER and HASHICORP VAULT can be used.
+AWS INSPECTOR or CLAIR can be used to scan and check if a docker image is vunerable.
